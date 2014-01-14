@@ -74,19 +74,30 @@
 <body>
 	<div id="mocha"></div>
 
+	<div id="fixtures"style="display: none; visibility: hidden;"></div>
+
+
 	<script src="../app/js/vendors/jquery.js"></script>
 	<script src="../app/js/vendors/underscore.js"></script>
 	<script src="../app/js/vendors/backbone.js"></script>
 	<script src="../app/js/vendors/backbone.localStorage.js"></script>
+	<script src="../app/js/vendors/showdown.js"></script>
 
 	<script src="../app/js/namespace.js"></script>
 	<script src="../app/js/config.js"></script>
+	<script src="../app/js/templates/templates.js"></script>
 	<script src="../app/js/models/note.js"></script>
 	<script src="../app/js/collections/notes.js"></script>
+	<script src="../app/js/views/note-view.js"></script>
 
 	<script>
 		// TEST
 		
+		// https://github.com/chaijs/chai-jquery
+		// https://github.com/chaijs/chai-jquery
+		// https://github.com/chaijs/chai-jquery
+		// https://github.com/chaijs/chai-jquery
+
 		// Setup
 		var expect = chai.expect;
 
@@ -110,6 +121,7 @@
 	<script src="../app/spec/namespace.spec.js"></script>
 	<script src="../app/spec/models/note.spec.js"></script>
 	<script src="../app/spec/collections/notes.spec.js"></script>
+	<script src="../app/spec/views/note-view.spec.js"></script>
 	
 </body>
 </html>
