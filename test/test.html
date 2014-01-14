@@ -8,8 +8,6 @@
 	<script src="lib/mocha.js"></script>
 	<script src="lib/chai.js"></script>
 	<script src="lib/sinon.js"></script>
-
-	<script src="spec/hello.spec.js"></script>
 	<script>
 		
 		// Setup.
@@ -23,31 +21,57 @@
 		};
 
 
-		describe('test library', function() {
-			describe('chai', function () {
-				it('should be equal using expect', function (done) {
-					expect(hello()).to.equal('Hello world');
-					done();
-				});
-			});
+		// describe('test library', function() {
+		// 	describe('chai', function () {
+		// 		it('should be equal using expect', function (done) {
+		// 			expect(hello()).to.equal('Hello world');
+		// 			done();
+		// 		});
+		// 	});
 
-			describe('sinon', function () {
-				it('should report spy called', function (done) {
-					var helloSpy = sinon.spy(window, 'hello');
+		// 	describe('sinon', function () {
+		// 		it('should report spy called', function (done) {
+		// 			var helloSpy = sinon.spy(window, 'hello');
 
-					expect(helloSpy.called).to.be.false;
-					hello();
-					expect(helloSpy.called).to.be.true;
-					hello.restore();
+		// 			expect(helloSpy.called).to.be.false;
+		// 			hello();
+		// 			expect(helloSpy.called).to.be.true;
+		// 			hello.restore();
 
-					done();
-				});
+		// 			done();
+		// 		});
 				
-			});
-		});
+		// 	});
+		// });
 
+		// // mocha.bail(false);
+		// describe('Timing', function () {
+			
+
+		// 	it('should be fast one', function (done) {
+		// 		expect("hi").to.equal("hi");
+		// 		// throw new Error();
+		// 		done();
+		// 	});
+
+		// 	it('should be medium one', function (done) {
+		// 		setTimeout(function() {
+		// 			expect('hi').to.equal('hi');
+		// 			done();
+		// 		}, 59);
+		// 	});
+
+		// 	it('should fail due to timeout', function (done) {
+		// 		setTimeout(function() {
+		// 			expect('hi').to.equal('hi');
+		// 			done();
+		// 		},2001);
+		// 	});
+		// });
 	</script>
 
+	<script src="../app/js/namespace.js"></script>
+	<script src="../app/spec/namespace.spec.js"></script>
 </head>
 <body>
 	<div id="mocha"></div>
