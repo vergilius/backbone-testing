@@ -10,15 +10,15 @@
 	<script src="lib/sinon.js"></script>
 	<script>
 		
-		// Setup.
-		var expect = chai.expect;
+		// // Setup.
+		// var expect = chai.expect;
 
-		mocha.setup("bdd");
+		// mocha.setup("bdd");
 		
-		// Run tests on window load event.
-		window.onload = function () {
-			mocha.run();
-		};
+		// // Run tests on window load event.
+		// window.onload = function () {
+		// 	mocha.run();
+		// };
 
 
 		// describe('test library', function() {
@@ -74,17 +74,42 @@
 <body>
 	<div id="mocha"></div>
 
-
-	<script src="spec/bdd.js"></script>
-
 	<script src="../app/js/vendors/jquery.js"></script>
 	<script src="../app/js/vendors/underscore.js"></script>
 	<script src="../app/js/vendors/backbone.js"></script>
+	<script src="../app/js/vendors/backbone.localStorage.js"></script>
 
 	<script src="../app/js/namespace.js"></script>
-	<script src="../app/spec/namespace.spec.js"></script>
-
+	<script src="../app/js/config.js"></script>
 	<script src="../app/js/models/note.js"></script>
+	<script src="../app/js/collections/notes.js"></script>
+
+	<script>
+		// TEST
+		
+		// Setup
+		var expect = chai.expect;
+
+		// use bdd
+		mocha.setup("bdd");
+		
+		// Run tests on window load event.
+		window.onload = function () {
+			mocha.run();
+		};
+
+		App.Config = _.extend(App.Config, {
+			storeName : 'notes-test'
+		});
+
+	</script>
+	<!-- test -->
+	<script src="spec/bdd.js"></script>
+
+	<!-- app -->
+	<script src="../app/spec/namespace.spec.js"></script>
 	<script src="../app/spec/models/note.spec.js"></script>
+	<script src="../app/spec/collections/notes.spec.js"></script>
+	
 </body>
 </html>
