@@ -6,7 +6,7 @@
   "author": "vergilius <michal.zurek@arteverest.pl>",
   "description": "a simple testing app with mocha-chai-sinon with travis/grunt",
   "scripts": {
-    "test": "grunt "
+    "test": "grunt test"
   },
   "devDependencies": {
     "mocha": "*",
