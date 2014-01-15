@@ -1,4 +1,11 @@
-backbone-testing
+backbone-testing [![Build Status](https://travis-ci.org/vergilius/backbone-testing.png?branch=master)](https://travis-ci.org/vergilius/backbone-testing)
 ================
 
-Backbone testing with Mocha
+Simple Backbone application testing with Mocha and stuff
+
+### Uses:
+* Mocha as test runner
+* Chai as assertion library (TDD/BDD)
+* Sinon (planned) as mocking library
+* PantomJS
+* Grunt
