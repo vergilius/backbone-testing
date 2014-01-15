@@ -1,0 +1,17 @@
+{
+  "name": "backbone-client-testing",
+  "private": true,
+  "preferGlobal": true,
+  "version": "0.1.0",
+  "author": "vergilius <michal.zurek@arteverest.pl>",
+  "description": "a simple testing app with mocha-chai-sinon with travis/grunt",
+  "scripts": {
+    "test": "grunt "
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "grunt": "*",
+    "grunt-mocha-phantomjs": "~0.4.0"
+  }
+}

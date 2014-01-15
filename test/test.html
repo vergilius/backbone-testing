@@ -105,8 +105,12 @@
 		mocha.setup("bdd");
 		
 		// Run tests on window load event.
-		window.onload = function () {
-			mocha.run();
+		window.onload = function() {
+			if ( mochaPhantomJS ) {
+				mochaPhantomJS.run();
+			} else {
+				mocha.run();
+			}
 		};
 
 		App.Config = _.extend(App.Config, {

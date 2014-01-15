@@ -1,9 +1,3 @@
-try {
-	expect = require('chai').expect;
-} catch (e) {
-	expect = chai.expect;
-}
-
 describe('BDD example', function () {
 	
 
