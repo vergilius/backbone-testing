@@ -2,6 +2,7 @@ backbone-testing [![Build Status](https://travis-ci.org/vergilius/backbone-testi
 ================
 
 Simple Backbone application testing with Mocha and stuff
+Runs in browser (test.html) and via Grunt
 
 ### Uses:
 * Mocha as test runner
